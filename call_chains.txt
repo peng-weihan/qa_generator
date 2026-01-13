@@ -1,0 +1,580 @@
+函数调用链统计
+================================================================================
+分析目录: /home/ugproj/raymone/swe-repos/requests/src/requests
+函数总数: 240
+调用关系总数: 551
+调用链总数: 190
+
+所有调用链（按长度排序）:
+================================================================================
+
+链 1 (长度: 6):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115) -> proxy_bypass_registry (utils.py:77)
+
+链 2 (长度: 6):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672) -> dotted_netmask (utils.py:687)
+
+链 3 (长度: 6):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115) -> proxy_bypass_registry (utils.py:77)
+
+链 4 (长度: 6):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672) -> dotted_netmask (utils.py:687)
+
+链 5 (长度: 5):
+resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115) -> proxy_bypass_registry (utils.py:77)
+
+链 6 (长度: 5):
+resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672) -> dotted_netmask (utils.py:687)
+
+链 7 (长度: 5):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115)
+
+链 8 (长度: 5):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672)
+
+链 9 (长度: 5):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> is_valid_cidr (utils.py:709)
+
+链 10 (长度: 5):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> set_environ (utils.py:734)
+
+链 11 (长度: 5):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> get_proxy (utils.py:764)
+
+链 12 (长度: 5):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> is_ipv4_address (utils.py:698)
+
+链 13 (长度: 5):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115) -> proxy_bypass_registry (utils.py:77)
+
+链 14 (长度: 5):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672) -> dotted_netmask (utils.py:687)
+
+链 15 (长度: 5):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115)
+
+链 16 (长度: 5):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672)
+
+链 17 (长度: 5):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> is_valid_cidr (utils.py:709)
+
+链 18 (长度: 5):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> set_environ (utils.py:734)
+
+链 19 (长度: 5):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> get_proxy (utils.py:764)
+
+链 20 (长度: 5):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> is_ipv4_address (utils.py:698)
+
+链 21 (长度: 5):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115) -> proxy_bypass_registry (utils.py:77)
+
+链 22 (长度: 5):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672) -> dotted_netmask (utils.py:687)
+
+链 23 (长度: 5):
+Session.merge_environment_settings (sessions.py:750) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115) -> proxy_bypass_registry (utils.py:77)
+
+链 24 (长度: 5):
+Session.merge_environment_settings (sessions.py:750) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672) -> dotted_netmask (utils.py:687)
+
+链 25 (长度: 4):
+get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115) -> proxy_bypass_registry (utils.py:77)
+
+链 26 (长度: 4):
+get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672) -> dotted_netmask (utils.py:687)
+
+链 27 (长度: 4):
+resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115)
+
+链 28 (长度: 4):
+resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672)
+
+链 29 (长度: 4):
+resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> is_valid_cidr (utils.py:709)
+
+链 30 (长度: 4):
+resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> set_environ (utils.py:734)
+
+链 31 (长度: 4):
+resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> get_proxy (utils.py:764)
+
+链 32 (长度: 4):
+resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> is_ipv4_address (utils.py:698)
+
+链 33 (长度: 4):
+resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115) -> proxy_bypass_registry (utils.py:77)
+
+链 34 (长度: 4):
+resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672) -> dotted_netmask (utils.py:687)
+
+链 35 (长度: 4):
+SessionRedirectMixin.resolve_redirects (sessions.py:159) -> merge_cookies (cookies.py:542) -> cookiejar_from_dict (cookies.py:521) -> create_cookie (cookies.py:455)
+
+链 36 (长度: 4):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755)
+
+链 37 (长度: 4):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115)
+
+链 38 (长度: 4):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672)
+
+链 39 (长度: 4):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> is_valid_cidr (utils.py:709)
+
+链 40 (长度: 4):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> set_environ (utils.py:734)
+
+链 41 (长度: 4):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> get_proxy (utils.py:764)
+
+链 42 (长度: 4):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> is_ipv4_address (utils.py:698)
+
+链 43 (长度: 4):
+Session.prepare_request (sessions.py:457) -> merge_cookies (cookies.py:542) -> cookiejar_from_dict (cookies.py:521) -> create_cookie (cookies.py:455)
+
+链 44 (长度: 4):
+Session.prepare_request (sessions.py:457) -> merge_hooks (sessions.py:91) -> merge_setting (sessions.py:61) -> to_key_val_list (utils.py:335)
+
+链 45 (长度: 4):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755)
+
+链 46 (长度: 4):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115)
+
+链 47 (长度: 4):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672)
+
+链 48 (长度: 4):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> is_valid_cidr (utils.py:709)
+
+链 49 (长度: 4):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> set_environ (utils.py:734)
+
+链 50 (长度: 4):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> get_proxy (utils.py:764)
+
+链 51 (长度: 4):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> is_ipv4_address (utils.py:698)
+
+链 52 (长度: 4):
+Session.merge_environment_settings (sessions.py:750) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115)
+
+链 53 (长度: 4):
+Session.merge_environment_settings (sessions.py:750) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672)
+
+链 54 (长度: 4):
+Session.merge_environment_settings (sessions.py:750) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> is_valid_cidr (utils.py:709)
+
+链 55 (长度: 4):
+Session.merge_environment_settings (sessions.py:750) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> set_environ (utils.py:734)
+
+链 56 (长度: 4):
+Session.merge_environment_settings (sessions.py:750) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> get_proxy (utils.py:764)
+
+链 57 (长度: 4):
+Session.merge_environment_settings (sessions.py:750) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> is_ipv4_address (utils.py:698)
+
+链 58 (长度: 3):
+HTTPDigestAuth.handle_401 (auth.py:241) -> parse_dict_header (utils.py:397) -> unquote_header_value (utils.py:432)
+
+链 59 (长度: 3):
+PreparedRequest.prepare_url (models.py:409) -> requote_uri (utils.py:650) -> unquote_unreserved (utils.py:626)
+
+链 60 (长度: 3):
+PreparedRequest.prepare_cookies (models.py:610) -> cookiejar_from_dict (cookies.py:521) -> create_cookie (cookies.py:455)
+
+链 61 (长度: 3):
+Response.__init__ (models.py:658) -> cookiejar_from_dict (cookies.py:521) -> create_cookie (cookies.py:455)
+
+链 62 (长度: 3):
+HTTPAdapter.cert_verify (adapters.py:280) -> extract_zipped_paths (utils.py:258) -> atomic_open (utils.py:296)
+
+链 63 (长度: 3):
+add_dict_to_cookiejar (utils.py:468) -> cookiejar_from_dict (cookies.py:521) -> create_cookie (cookies.py:455)
+
+链 64 (长度: 3):
+should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115) -> proxy_bypass_registry (utils.py:77)
+
+链 65 (长度: 3):
+should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672) -> dotted_netmask (utils.py:687)
+
+链 66 (长度: 3):
+get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115)
+
+链 67 (长度: 3):
+get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672)
+
+链 68 (长度: 3):
+get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> is_valid_cidr (utils.py:709)
+
+链 69 (长度: 3):
+get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> set_environ (utils.py:734)
+
+链 70 (长度: 3):
+get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> get_proxy (utils.py:764)
+
+链 71 (长度: 3):
+get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755) -> is_ipv4_address (utils.py:698)
+
+链 72 (长度: 3):
+resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755)
+
+链 73 (长度: 3):
+resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115)
+
+链 74 (长度: 3):
+resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672)
+
+链 75 (长度: 3):
+resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> is_valid_cidr (utils.py:709)
+
+链 76 (长度: 3):
+resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> set_environ (utils.py:734)
+
+链 77 (长度: 3):
+resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> get_proxy (utils.py:764)
+
+链 78 (长度: 3):
+resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755) -> is_ipv4_address (utils.py:698)
+
+链 79 (长度: 3):
+RequestsCookieJar.set (cookies.py:206) -> morsel_to_cookie (cookies.py:492) -> create_cookie (cookies.py:455)
+
+链 80 (长度: 3):
+merge_cookies (cookies.py:542) -> cookiejar_from_dict (cookies.py:521) -> create_cookie (cookies.py:455)
+
+链 81 (长度: 3):
+merge_hooks (sessions.py:91) -> merge_setting (sessions.py:61) -> to_key_val_list (utils.py:335)
+
+链 82 (长度: 3):
+SessionRedirectMixin.resolve_redirects (sessions.py:159) -> merge_cookies (cookies.py:542) -> cookiejar_from_dict (cookies.py:521)
+
+链 83 (长度: 3):
+SessionRedirectMixin.resolve_redirects (sessions.py:159) -> requote_uri (utils.py:650) -> unquote_unreserved (utils.py:626)
+
+链 84 (长度: 3):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816)
+
+链 85 (长度: 3):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755)
+
+链 86 (长度: 3):
+Session.__init__ (sessions.py:390) -> default_headers (utils.py:890) -> default_user_agent (utils.py:881)
+
+链 87 (长度: 3):
+Session.__init__ (sessions.py:390) -> cookiejar_from_dict (cookies.py:521) -> create_cookie (cookies.py:455)
+
+链 88 (长度: 3):
+Session.prepare_request (sessions.py:457) -> merge_cookies (cookies.py:542) -> cookiejar_from_dict (cookies.py:521)
+
+链 89 (长度: 3):
+Session.prepare_request (sessions.py:457) -> merge_hooks (sessions.py:91) -> merge_setting (sessions.py:61)
+
+链 90 (长度: 3):
+Session.prepare_request (sessions.py:457) -> cookiejar_from_dict (cookies.py:521) -> create_cookie (cookies.py:455)
+
+链 91 (长度: 3):
+Session.prepare_request (sessions.py:457) -> merge_setting (sessions.py:61) -> to_key_val_list (utils.py:335)
+
+链 92 (长度: 3):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816)
+
+链 93 (长度: 3):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755)
+
+链 94 (长度: 3):
+Session.merge_environment_settings (sessions.py:750) -> get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755)
+
+链 95 (长度: 3):
+Session.merge_environment_settings (sessions.py:750) -> merge_setting (sessions.py:61) -> to_key_val_list (utils.py:335)
+
+链 96 (长度: 2):
+_basic_auth_str (auth.py:25) -> to_native_string (_internal_utils.py:25)
+
+链 97 (长度: 2):
+HTTPDigestAuth.handle_401 (auth.py:241) -> parse_dict_header (utils.py:397)
+
+链 98 (长度: 2):
+HTTPDigestAuth.handle_401 (auth.py:241) -> extract_cookies_to_jar (cookies.py:124)
+
+链 99 (长度: 2):
+RequestEncodingMixin._encode_params (models.py:107) -> to_key_val_list (utils.py:335)
+
+链 100 (长度: 2):
+RequestEncodingMixin._encode_files (models.py:137) -> to_key_val_list (utils.py:335)
+
+链 101 (长度: 2):
+RequestEncodingMixin._encode_files (models.py:137) -> guess_filename (utils.py:251)
+
+链 102 (长度: 2):
+Request.__init__ (models.py:258) -> default_hooks (hooks.py:15)
+
+链 103 (长度: 2):
+PreparedRequest.__init__ (models.py:334) -> default_hooks (hooks.py:15)
+
+链 104 (长度: 2):
+PreparedRequest.prepare_method (models.py:393) -> to_native_string (_internal_utils.py:25)
+
+链 105 (长度: 2):
+PreparedRequest.prepare_url (models.py:409) -> to_native_string (_internal_utils.py:25)
+
+链 106 (长度: 2):
+PreparedRequest.prepare_url (models.py:409) -> unicode_is_ascii (_internal_utils.py:38)
+
+链 107 (长度: 2):
+PreparedRequest.prepare_url (models.py:409) -> requote_uri (utils.py:650)
+
+链 108 (长度: 2):
+PreparedRequest.prepare_headers (models.py:483) -> check_header_validity (utils.py:1024)
+
+链 109 (长度: 2):
+PreparedRequest.prepare_headers (models.py:483) -> to_native_string (_internal_utils.py:25)
+
+链 110 (长度: 2):
+PreparedRequest.prepare_body (models.py:494) -> super_len (utils.py:136)
+
+链 111 (长度: 2):
+PreparedRequest.prepare_content_length (models.py:572) -> super_len (utils.py:136)
+
+链 112 (长度: 2):
+PreparedRequest.prepare_auth (models.py:588) -> get_auth_from_url (utils.py:1008)
+
+链 113 (长度: 2):
+PreparedRequest.prepare_cookies (models.py:610) -> get_cookie_header (cookies.py:140)
+
+链 114 (长度: 2):
+PreparedRequest.prepare_cookies (models.py:610) -> cookiejar_from_dict (cookies.py:521)
+
+链 115 (长度: 2):
+Response.__init__ (models.py:658) -> cookiejar_from_dict (cookies.py:521)
+
+链 116 (长度: 2):
+Response.iter_content (models.py:799) -> stream_decode_response_unicode (utils.py:554)
+
+链 117 (长度: 2):
+Response.iter_content (models.py:799) -> iter_slices (utils.py:571)
+
+链 118 (长度: 2):
+Response.json (models.py:947) -> guess_json_utf (utils.py:947)
+
+链 119 (长度: 2):
+Response.links (models.py:983) -> parse_header_links (utils.py:904)
+
+链 120 (长度: 2):
+get (api.py:62) -> request (api.py:14)
+
+链 121 (长度: 2):
+options (api.py:76) -> request (api.py:14)
+
+链 122 (长度: 2):
+head (api.py:88) -> request (api.py:14)
+
+链 123 (长度: 2):
+post (api.py:103) -> request (api.py:14)
+
+链 124 (长度: 2):
+put (api.py:118) -> request (api.py:14)
+
+链 125 (长度: 2):
+patch (api.py:133) -> request (api.py:14)
+
+链 126 (长度: 2):
+delete (api.py:148) -> request (api.py:14)
+
+链 127 (长度: 2):
+HTTPAdapter.proxy_manager_for (adapters.py:242) -> SOCKSProxyManager (adapters.py:62)
+
+链 128 (长度: 2):
+HTTPAdapter.proxy_manager_for (adapters.py:242) -> get_auth_from_url (utils.py:1008)
+
+链 129 (长度: 2):
+HTTPAdapter.cert_verify (adapters.py:280) -> extract_zipped_paths (utils.py:258)
+
+链 130 (长度: 2):
+HTTPAdapter.build_response (adapters.py:336) -> extract_cookies_to_jar (cookies.py:124)
+
+链 131 (长度: 2):
+HTTPAdapter.build_response (adapters.py:336) -> get_encoding_from_headers (utils.py:529)
+
+链 132 (长度: 2):
+HTTPAdapter.get_connection_with_tls_context (adapters.py:423) -> prepend_scheme_if_needed (utils.py:979)
+
+链 133 (长度: 2):
+HTTPAdapter.get_connection_with_tls_context (adapters.py:423) -> select_proxy (utils.py:828)
+
+链 134 (长度: 2):
+HTTPAdapter.get_connection (adapters.py:472) -> prepend_scheme_if_needed (utils.py:979)
+
+链 135 (长度: 2):
+HTTPAdapter.get_connection (adapters.py:472) -> select_proxy (utils.py:828)
+
+链 136 (长度: 2):
+HTTPAdapter.request_url (adapters.py:523) -> urldefragauth (utils.py:1054)
+
+链 137 (长度: 2):
+HTTPAdapter.request_url (adapters.py:523) -> select_proxy (utils.py:828)
+
+链 138 (长度: 2):
+HTTPAdapter.proxy_headers (adapters.py:569) -> get_auth_from_url (utils.py:1008)
+
+链 139 (长度: 2):
+proxy_bypass (utils.py:115) -> proxy_bypass_registry (utils.py:77)
+
+链 140 (长度: 2):
+extract_zipped_paths (utils.py:258) -> atomic_open (utils.py:296)
+
+链 141 (长度: 2):
+parse_list_header (utils.py:365) -> unquote_header_value (utils.py:432)
+
+链 142 (长度: 2):
+parse_dict_header (utils.py:397) -> unquote_header_value (utils.py:432)
+
+链 143 (长度: 2):
+add_dict_to_cookiejar (utils.py:468) -> cookiejar_from_dict (cookies.py:521)
+
+链 144 (长度: 2):
+get_unicode_from_response (utils.py:581) -> get_encoding_from_headers (utils.py:529)
+
+链 145 (长度: 2):
+requote_uri (utils.py:650) -> unquote_unreserved (utils.py:626)
+
+链 146 (长度: 2):
+address_in_network (utils.py:672) -> dotted_netmask (utils.py:687)
+
+链 147 (长度: 2):
+should_bypass_proxies (utils.py:755) -> proxy_bypass (utils.py:115)
+
+链 148 (长度: 2):
+should_bypass_proxies (utils.py:755) -> address_in_network (utils.py:672)
+
+链 149 (长度: 2):
+should_bypass_proxies (utils.py:755) -> is_valid_cidr (utils.py:709)
+
+链 150 (长度: 2):
+should_bypass_proxies (utils.py:755) -> set_environ (utils.py:734)
+
+链 151 (长度: 2):
+should_bypass_proxies (utils.py:755) -> get_proxy (utils.py:764)
+
+链 152 (长度: 2):
+should_bypass_proxies (utils.py:755) -> is_ipv4_address (utils.py:698)
+
+链 153 (长度: 2):
+get_environ_proxies (utils.py:816) -> should_bypass_proxies (utils.py:755)
+
+链 154 (长度: 2):
+resolve_proxies (utils.py:854) -> get_environ_proxies (utils.py:816)
+
+链 155 (长度: 2):
+resolve_proxies (utils.py:854) -> should_bypass_proxies (utils.py:755)
+
+链 156 (长度: 2):
+default_headers (utils.py:890) -> default_user_agent (utils.py:881)
+
+链 157 (长度: 2):
+main (help.py:128) -> info (help.py:69)
+
+链 158 (长度: 2):
+_init (status_codes.py:109) -> doc (status_codes.py:116)
+
+链 159 (长度: 2):
+MockRequest.get_full_url (cookies.py:49) -> to_native_string (_internal_utils.py:25)
+
+链 160 (长度: 2):
+RequestsCookieJar.set (cookies.py:206) -> morsel_to_cookie (cookies.py:492)
+
+链 161 (长度: 2):
+RequestsCookieJar.set (cookies.py:206) -> create_cookie (cookies.py:455)
+
+链 162 (长度: 2):
+RequestsCookieJar.set (cookies.py:206) -> remove_cookie_by_name (cookies.py:151)
+
+链 163 (长度: 2):
+RequestsCookieJar.__delitem__ (cookies.py:343) -> remove_cookie_by_name (cookies.py:151)
+
+链 164 (长度: 2):
+morsel_to_cookie (cookies.py:492) -> create_cookie (cookies.py:455)
+
+链 165 (长度: 2):
+cookiejar_from_dict (cookies.py:521) -> create_cookie (cookies.py:455)
+
+链 166 (长度: 2):
+merge_cookies (cookies.py:542) -> cookiejar_from_dict (cookies.py:521)
+
+链 167 (长度: 2):
+merge_setting (sessions.py:61) -> to_key_val_list (utils.py:335)
+
+链 168 (长度: 2):
+merge_hooks (sessions.py:91) -> merge_setting (sessions.py:61)
+
+链 169 (长度: 2):
+SessionRedirectMixin.get_redirect_target (sessions.py:107) -> to_native_string (_internal_utils.py:25)
+
+链 170 (长度: 2):
+SessionRedirectMixin.resolve_redirects (sessions.py:159) -> merge_cookies (cookies.py:542)
+
+链 171 (长度: 2):
+SessionRedirectMixin.resolve_redirects (sessions.py:159) -> extract_cookies_to_jar (cookies.py:124)
+
+链 172 (长度: 2):
+SessionRedirectMixin.resolve_redirects (sessions.py:159) -> to_native_string (_internal_utils.py:25)
+
+链 173 (长度: 2):
+SessionRedirectMixin.resolve_redirects (sessions.py:159) -> rewind_body (utils.py:1071)
+
+链 174 (长度: 2):
+SessionRedirectMixin.resolve_redirects (sessions.py:159) -> requote_uri (utils.py:650)
+
+链 175 (长度: 2):
+SessionRedirectMixin.rebuild_auth (sessions.py:282) -> get_netrc_auth (utils.py:207)
+
+链 176 (长度: 2):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> get_auth_from_url (utils.py:1008)
+
+链 177 (长度: 2):
+SessionRedirectMixin.rebuild_proxies (sessions.py:302) -> resolve_proxies (utils.py:854)
+
+链 178 (长度: 2):
+Session.__init__ (sessions.py:390) -> default_headers (utils.py:890)
+
+链 179 (长度: 2):
+Session.__init__ (sessions.py:390) -> cookiejar_from_dict (cookies.py:521)
+
+链 180 (长度: 2):
+Session.__init__ (sessions.py:390) -> default_hooks (hooks.py:15)
+
+链 181 (长度: 2):
+Session.prepare_request (sessions.py:457) -> merge_cookies (cookies.py:542)
+
+链 182 (长度: 2):
+Session.prepare_request (sessions.py:457) -> merge_hooks (sessions.py:91)
+
+链 183 (长度: 2):
+Session.prepare_request (sessions.py:457) -> get_netrc_auth (utils.py:207)
+
+链 184 (长度: 2):
+Session.prepare_request (sessions.py:457) -> cookiejar_from_dict (cookies.py:521)
+
+链 185 (长度: 2):
+Session.prepare_request (sessions.py:457) -> merge_setting (sessions.py:61)
+
+链 186 (长度: 2):
+Session.send (sessions.py:673) -> dispatch_hook (hooks.py:22)
+
+链 187 (长度: 2):
+Session.send (sessions.py:673) -> resolve_proxies (utils.py:854)
+
+链 188 (长度: 2):
+Session.send (sessions.py:673) -> extract_cookies_to_jar (cookies.py:124)
+
+链 189 (长度: 2):
+Session.merge_environment_settings (sessions.py:750) -> get_environ_proxies (utils.py:816)
+
+链 190 (长度: 2):
+Session.merge_environment_settings (sessions.py:750) -> merge_setting (sessions.py:61)
+
